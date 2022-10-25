@@ -40,8 +40,24 @@ public class AddAddressBook {
 		contact.setZip(zip);
 		contact.setMobileNumber(mobileNumber);
 		contact.setEmail(email);
-		System.out.println(contact);
 
 	}
 
+	public void display() {
+		System.out.println(contact);
+	}
+
+	public void editContacts() {
+		System.out.println("Enter the First Name of a person to edit:");
+		String name = scanner.nextLine();
+
+		if (name.equalsIgnoreCase(contact.getFirstName())) {
+			addContact();
+		} else {
+			System.out.println("Invalid First Name \n Please enter Valid First name: ");
+		editContacts();}
+
+	}
+
+	
 	}

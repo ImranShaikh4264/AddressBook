@@ -8,7 +8,31 @@ public class AddressbookMain {
 		System.out.println("Welcome to Address Book Program");
 		
 		AddAddressBook obj=new AddAddressBook();
-		obj.addContact();
+		int option;
+		boolean condition=true;
+		
+		while(condition) {
+			System.out.println("1.ADD CONTACT \n2.DISPLAY CONTACT \n3.EDIT CONTACT  \n4.EXIT");
+			System.out.println("Enter the Option Number");
+			option = sc.nextInt();
+			
+			switch (option) {
+			case 1:
+				obj.addContact();
+				break;
+			case 2:
+				obj.display();
+				break;
+			case 3:
+				obj.editContacts();
+				break;	
+			
+			case 4:
+				condition=false;
+				break;
+				}
+			
+			}
 	        
 	        }
 	       
