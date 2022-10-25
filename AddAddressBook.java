@@ -40,6 +40,7 @@ public class AddAddressBook {
 		contact.setZip(zip);
 		contact.setMobileNumber(mobileNumber);
 		contact.setEmail(email);
+		System.out.println(contact);
 
 	}
 
