@@ -37,7 +37,7 @@ public class Contacts {
 		this.lastName = lastName;
 	}
 
-	public String getAddress(String address) {
+	public String getAddress() {
 		return address;
 	}
 
